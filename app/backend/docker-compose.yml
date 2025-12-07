@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  backend:
+    build: .
+    container_name: cloudguru-backend
+    ports:
+      - "5000:5000"
+    environment:
+      APP_ENV: local
+      LOG_LEVEL: debug
+      # In AWS, APP_SECRET will come from Secrets Manager → task env
+      APP_SECRET: "local-secret-value"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 5000

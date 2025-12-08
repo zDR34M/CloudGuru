@@ -13,7 +13,7 @@ variable "project_name" {
 variable "my_ip_cidr" {
   description = "Your IP in CIDR format for bastion SSH"
   type        = string
-  default     = "51.21.252.86/32"
+  default     = "0.0.0.0/32" # => change ip
 }
 
 variable "ssh_key_name" {
@@ -25,5 +25,5 @@ variable "ssh_key_name" {
 variable "backend_image" {
   description = "ECR image URI (including tag) for backend"
   type        = string
-  default     = "065727387548.dkr.ecr.eu-north-1.amazonaws.com/cloudguru-backend:latest"
+  default     = "id.dkr.ecr.eu-north-1.amazonaws.com/cloudguru-backend:latest" # => change the id
 }

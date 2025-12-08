@@ -19,7 +19,7 @@ variable "my_ip_cidr" {
 variable "ssh_key_name" {
   description = "Existing EC2 key pair name for bastion host"
   type        = string
-  default     = "trtech"
+  default     = "ssh_key" # => change to your key
 }
 
 variable "backend_image" {

@@ -14,11 +14,11 @@ This project demonstrates a **complete production-grade DevOps pipeline** using 
 
 ## 🧱 Architecture Overview
 
-Developer Push → GitHub Actions → Docker Build → Amazon ECR
-↓
-Terraform Infrastructure
-↓
-ECS Fargate → ALB → Internet
+    Developer Push → GitHub Actions → Docker Build → Amazon ECR
+    ↓
+    Terraform Infrastructure
+    ↓
+    ECS Fargate → ALB → Internet
 
 
 ---
